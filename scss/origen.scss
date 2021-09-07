@@ -1,0 +1,495 @@
+@import url(sass/node_modules/function-bind);
+
+*{box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+ }
+
+ $ancho:720px;
+
+    
+body {
+      padding-top:80px;
+      font-family: monospace,monaco;
+   }
+
+
+.logo{
+   width: 140px;
+   position: absolute;
+   bottom: -25px;
+
+}
+
+.container{
+ padding: 50px 0px !important;
+ width: $ancho/2;
+   
+}
+
+#myCarousel img{
+   padding: 0px !important;
+   width: 100%;
+}
+
+#imagen__fondo{
+   background:url("imagenes_css/trail-running2.jpg") no-repeat center center;
+     opacity: 0.9;
+   background-size:cover;
+   }
+
+   .menu {
+      display:block;
+      width:100%;
+      position: fixed;
+      top:0;
+      background:black;
+      z-index: 1000;
+      margin: 0;
+   
+
+   .menu--button {
+      display: block;
+      padding: 20px;
+      color: #fff;
+      overflow: hidden;
+      font-size: 25px;
+      font-weight: bold;
+      text-decoration: none;
+   }
+
+    span {
+      float: right;
+      font-size: 40px;
+   }
+
+}
+
+   .nav {
+      display: non;
+      width: 80%;
+      right: 100%;
+      position: fixed;
+      margin: 0;
+      background:black;
+      z-index: 1000;
+   
+
+   .nav--li {
+      display: block;
+      border-bottom:1px solid rgba(255,255,255,.5);
+   }
+
+    ul li a {
+      display: block;
+      text-decoration: none;
+      color: #fff;
+      padding: 20px;
+   }
+
+   .nav--li:hover {
+   background:#E6344A;
+}
+
+}
+
+
+
+//--TITULO PRINCIPAL--//
+.titulo__principal{
+   width: 100%;
+   text-align: center;
+   font-size:30px ;
+   color: black;
+   font-family: 'GFS Didot', serif;
+   padding-top: 10px;
+
+
+p{
+   font-family: 'Pacifico', cursive;
+    display: inline;
+   color: black;
+}
+
+}
+
+//ARTICULOS MAIN//
+
+.articulos{
+   width: 100%;
+   text-align: center;
+   padding: 25px;
+   display: block;
+   
+
+
+.articulos--modif1 {
+  padding-top: 20px; 
+  text-align: center;
+  font-size: 20px;
+  opacity: 0.8; 
+}
+
+}
+
+.img__entrenamientos{
+   padding: 50px;
+   margin:10px 0;
+   display:  flex;
+   justify-content: center;
+  animation-duration: 2s;
+  animation-name: aparecer;
+
+  @keyframes aparecer{
+   0%{
+      opacity: 0;
+   }
+   100%{
+      opacity: 1;
+   }
+}
+
+ img{
+
+   padding: 30px;
+} 
+
+}
+
+.articulo__dos{
+   width: 100%;
+
+   a{
+    font-size: 20px;
+   cursor: pointer;
+   display: inline-block;
+   border: 0;
+   font-weight: bold;
+   padding: 10px 20px;
+   background: gray;
+   color: black;
+   border: 2px solid black ;
+   margin: 10px 0;
+}
+
+   a:hover{
+   background-color: black;
+   color: white ;
+}
+
+}
+
+//--FOOTER--//
+
+
+
+footer{
+   width: 100%;
+   position: absolute;
+   height: 100px;
+   background-size: cover;
+   background-image: linear-gradient(to right, green, yellow);
+   display: flex;
+
+   .titulo__contacto{
+   position: relative;
+   padding-top:30px ;
+   padding-left: 10px;
+   font-size:15px ;
+   display: flex;
+   left: 80px;
+    
+}
+
+
+
+
+.footer--redes{
+   display: flex;
+   align-items:center;
+   justify-content:center;
+   padding-left:10px;
+  padding-top:30px ;
+}
+
+
+   i{
+   font-size: 20px;
+   margin: 0 10px;
+   display: grid;
+   columns: 1fr;
+   ;
+}
+
+   h6{
+   position: relative;
+   padding-top: 35px ;
+   padding-left: 10px;
+}
+
+}
+
+
+//--PAGINA CONTACTO--//
+
+.container__contacto{
+   width: 100%;
+
+
+ h1{
+   text-align: center;
+   font-size: 50px;
+}
+
+ h2{
+  text-align: center;
+  font-size: 20px;
+}
+
+}
+
+
+.formulario{
+   width: 100%;
+   display: block;
+   padding: 63px;
+   margin-top: 60px ;
+   border: 1px solid black;
+}
+
+.campo{
+   padding: 50px;
+}
+
+.labels{
+   font-size: 20px;
+}
+
+//--PAGINA ACERCA DE--//
+
+.container__info{
+   width: 100%;
+   text-align: center;
+
+
+h1{
+   font-size: 30px;
+}
+
+}
+
+table{
+   width: 100%;
+   border: 1px solid black;
+   border-collapse: collapse;
+
+
+th, td {
+  border: 1px solid black;
+}
+.table{
+   padding: 50px;
+}
+
+}
+
+/*--PAGINA DONDE ENCONTRARNOS--*/
+
+.lugares{
+   text-align: center;
+   font-size: 25px;
+   padding: 50px;
+}
+
+.container__map{
+   overflow:hidden;
+padding-bottom:56.25%;
+position:relative;
+height:0;
+padding-top: 20px;
+
+
+iframe{
+left:0;
+top:0;
+height:100%;
+width:100%;
+position:absolute;
+}
+
+}
+
+//--PAGINA NOSOTROS--//
+.c__nosotros{
+   text-align: center;
+   width: 100%;
+
+
+h1{
+   font-size: 35px;
+}
+
+ p{
+   margin: 20px;
+   padding-top: 15px;
+}
+
+}
+
+/*IMG DE PRUEBA*/
+.img__nosotros{
+   height: 580px;
+   padding: 50px;
+   display: flex;
+}
+
+@media screen and (min-width: 800px){
+body{
+   background-color: white;
+
+   
+
+
+.titulo__principal{
+   padding-top: 100px;
+}
+
+
+.container {
+   padding-top: 50px !important;
+}
+
+video{
+   height: 400px;
+}
+
+}
+
+.footer--redes{
+   position: relative;
+   padding-left: 20rem;
+   padding-top:35px ;
+}
+
+.titulo__contacto{
+   float: right;
+   position: relative;
+   left: 25rem;
+   font-size: 20px;
+}
+
+
+//--PAGINA CONTACTO--//
+
+.campo{
+   padding: 100px;
+}
+
+//--PAGINA ACERCA DE--//
+
+.container__info p{
+  margin: 30px;
+}
+
+
+}
+    
+
+
+
+
+@media screen and (min-width: 1024px){
+
+header{
+   height: 1000px;
+}
+
+
+   
+.titulo__principal {
+
+    h1{font-size: 100px;
+    }
+
+
+
+    h2{
+
+    font-size: 90px;
+
+}
+
+}
+
+video{
+   display: block;
+   width: 100%;
+   height: 50rem;
+
+}
+
+.contacto--redes{
+   position: relative;
+   padding-left: 65rem;
+   padding-top:35px ;
+}
+.titulo__contacto{
+   float: right;
+   position: relative;
+   left: 70rem;
+   font-size: 20px;
+    ;
+}
+
+//--PAGINA CONTACTO--//
+
+.container__contacto{
+   width: 100%;
+}
+
+//--PAGINA ACERCA DE--//
+
+.container__info p{
+  margin: 60px;
+}
+
+table{
+   width: 80%;
+}
+
+//--PAGINA NOSOTROS--//
+.c__nosotros{
+   text-align: center;
+   width: 100%;
+   padding-bottom: 40px;
+   position: absolute;
+   bottom: 150px;
+
+
+h1{
+   font-size: 50px;
+}
+
+ p{
+   font-size: 25px;
+   margin: 0 100px;
+}
+
+.img__nosotros{
+   width: 100%;
+   height: 800px;   
+}
+
+}
+
+}
+
+
+
+
+
+
+
+
+
+
